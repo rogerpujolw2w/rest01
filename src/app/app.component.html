@@ -1,5 +1,14 @@
 <p>
 Welcome to {{ url | json }}!
 </p>
-<button (click)='getUrl()'>Click</button>
+<button (click)='getLogin()'>Login</button>
+
+<button (click)='getIncio()'>Getinicio</button>
+
+
+<ul *ngFor='let elem of Menus;'>
+  <li>{{ elem.titulo }}
+  </li>
+</ul>
+
 <router-outlet></router-outlet>
